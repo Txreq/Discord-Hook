@@ -1,0 +1,29 @@
+@import url("style/app.css");
+@import url("style/messageTab.css");
+@import url("style/settings.css");
+@import url("style/embed.css");
+body {
+    background-color: #23272A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+input, textarea, button {
+    outline: none;
+}
+
+#error {
+    text-align: center;
+    visibility: hidden;
+    padding: 15px;
+    color: #f04747;
+}
+
+.content {display: none}
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background: #2C2F33;}
+::-webkit-scrollbar-thumb {background: #7289DA;}
+::-webkit-scrollbar-thumb:hover {background: #2C2F33;}
