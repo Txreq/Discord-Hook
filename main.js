@@ -1,3 +1,8 @@
+/*
+All rights reserved to Tareq Dev (c) 2021
+Disocrd Hook V2 Powered By Electron
+*/
+
 const {app, BrowserWindow, Menu } = require('electron')
 
 function createWindow(){
