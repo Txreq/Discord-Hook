@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Hook v2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="hook.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9609131594.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="eel.js"></script>
+</head>
+<body>
+    <div class="tab">
+        <button class="tabBtn" onclick="openTab(event, 'messageTab')">Message</button>
+        <button class="tabBtn" onclick="openTab(event, 'embedTab')">Embed</button>
+        <button class="tabBtn" onclick="openTab(event, 'settingsTab')">Settings</button>
+    </div>
+
+    <div id="messageTab" class="content">
+        <div class="messageSend">
+            <textarea name="txtArea" id="txtArea">
+            </textarea>
+    
+            <div class="sendMessageDiv">
+                <input type="text" name="message" id="msgInput">
+                <button  onclick="sendMessage()" id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="embedTab" class="content">
+        <div class="embedTabContent">
+            <div id="notification"><p>test</p></div>
+            <input type="text" id="title"  name="title" placeholder="title ..." required>
+            <textarea name="description" id="description" placeholder="description ..." required></textarea>
+            <div class="authorSet">
+                <input type="text" id="author" name="author" placeholder="author ..." required>
+                <input type="url" id="authorPic" name="authorPic" placeholder="author icon ..." required>
+            </div>
+            <div class="footerSet">
+                <input type="text" id="footer" name="footer" placeholder="footer ..." required>
+                <input type="url" id="footerPic" name="footer" placeholder="footer icon ..." required>
+            </div>
+            <input type="url" id="thumbnail" name="thumbnail" placeholder="thumbnail link ..." required>
+            <input type="url" id="image" name="image" placeholder="image link ..." required>
+            <div class="colorSetmessageSend">
+                <input name="color" id="color" placeholder="hex color" required>
+                <button onclick="clearInputs()"  id="clearByn" required><i class="fas fa-trash-alt"></i></button>
+                <button onclick="sendEmbed()" id="sendEmbed" required><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="settingsTab" class="content">
+        <div class="settingsTabContent">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="hookOptionsInput">
+            <label for="avatar">Avatar Url:</label>
+            <input type="text" id="avatar" class="hookOptionsInput">
+            <label for="link">Link:</label>
+            <input type="text" id="link" class="hookOptionsInput">
+            <button onclick="saveFunction()" id="saveBtn"><i class="fas fa-save"> save</i></button>
+        </div>
+    </div>
+</body>
+</html>
