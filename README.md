@@ -3,7 +3,7 @@ Discord Hook, a program used to control Discord Webhooks (sending messages, embe
 
 Please, keep my copyrights (c) Tareq Dev 2021
 # Download
-You can download the executable version.
+You can download the executable version powered by Electron JS.
 - [discord-hook-win32-x64.7z](https://www.mediafire.com/file/tjjazoqz57w2npl/discord-hook-win32-x64.7z/file)
 
 
